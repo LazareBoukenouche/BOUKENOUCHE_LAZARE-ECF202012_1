@@ -21,10 +21,9 @@
         width: 100vw;
         display: grid;
         grid-template-areas: 
-                            "header header header"
-                            "search search search"
-                            "app app app"
-                            "list list list"
+                            "header header"
+                            "biography biography"
+                            "my_artists last_songs"
                             "footer footer footer";
         background: linear-gradient(#976edd, #1a1120);
     }
