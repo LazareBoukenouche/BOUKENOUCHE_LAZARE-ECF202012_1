@@ -1,0 +1,222 @@
+/* ========================== Media Queries phone portrait ======================== */
+
+@media screen and (min-width:300px) {
+    body {
+        margin: 0;
+        padding: 0;
+        width: 95vw;
+        color: white;
+    }
+
+    header,footer {  
+        height: 10vh;
+    }
+
+    header {
+        background-color: darkred;
+        color: white;
+    }
+
+    header h1 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    main {
+        background: linear-gradient(#976edd, #1a1120);
+    }
+    
+    header a {
+        
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: white;
+    }
+
+    header a:hover {
+        color: #976edd;
+        background-color: white;
+    }
+
+    main>div {
+        width: 90%;
+        margin-left: 5%;
+        padding-top: 2%;
+        border: 2px solid blue;
+    }
+
+    main div.search {
+        display: flex;
+        flex-direction:column ;
+    }
+
+    main div.search ul,main div.search div.group_inputs {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main div.search ul li  {
+        list-style-type: none;
+        width: 20%;
+        
+    }
+    main div.search div.group_inputs input {
+        width: 40%;
+    }
+
+    main div.search ul li a img  {
+        height: 50%;
+    }
+    main div.recent_search button {
+        width: 80%;
+        margin-left: 10%;
+        
+    }
+    main div.recent_search ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        
+    }
+    main div.recent_search ul li {
+        list-style-type: none;
+        width: 20%;
+        margin-left: 5%;
+        color: white;
+    }
+    main div.recent_search ul li a img {
+        width: 100%;
+    }
+
+    div.imgList {
+        height: 50%;
+        margin-bottom: 5vh;
+    }
+
+    div.imgList h2 {
+        text-align: center;
+    }
+
+    div.imgList ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+    } 
+
+    div.imgList ul li {
+        list-style-type: none;
+        width: 40%;
+        text-align: center;
+    }
+
+    div.imgList img {
+        width: 40%;  
+    }
+    
+    footer {
+        background-color: black;
+        color: gray;
+        
+    }
+
+    footer img {
+        max-width: 20%;
+        height: 80%;
+        margin-left: 40%;
+        margin-top: 1%;
+    }
+
+    footer ul {
+        display: none;
+    }
+}
+
+/* ========================== Media Queries phone paysage ======================== */
+@media screen and (min-width:700px) {
+}
+
+/* ========================== Media Queries tablette ======================== */
+@media screen and (min-width:800px) {
+}
+
+/* ========================== Media Queries Desktop ======================== */
+ @media screen and (min-width:1200px) {
+     body {
+         width: 100vw;
+         margin: 0;
+         padding: 0;
+     }
+ 
+
+    div.container_search {
+        width: 100%;
+        display: grid;
+        grid-template-areas: 
+                            
+                            "recent_search_list singers_img singers_img singers_img "
+                            "recent_search search search search";
+        /* background: linear-gradient(#976edd, #1a1120); */
+    }
+    /* div.imgList {
+        grid-area: list;
+        height: 30%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    div.imgList ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width:100%;
+        justify-content: space-around;
+    }
+    div.imgList ul li {
+        width: 10%;
+        margin: 0;
+        padding: 0;
+    }
+    div.imgList ul li img {
+        width: 100%; 
+
+    }*/
+    main>div {
+        border:2px solid yellow;
+    }
+
+    div.recent_search {
+        display: flex;
+        grid-area: recent_search;
+    }
+    div.recent_search button {
+        display: none;
+        margin: 0;
+        padding: 0;
+    }
+    div.recent_search ul.singers {
+        grid-area: singers_img;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(rgb(133, 133, 219), rgb(23, 23, 189));
+        margin: 0;
+        border: 2px solid red;
+        
+    }
+    
+    div.recent_search ul.singers_links {
+        width: 70%;
+        height: 30%;
+    }
+
+    div.search {
+        grid-area: search;
+    }
+
+}
+
+/* ================ CSS general ===================== */
