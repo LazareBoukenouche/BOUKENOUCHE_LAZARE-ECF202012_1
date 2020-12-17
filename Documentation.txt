@@ -1,0 +1,20 @@
+﻿				Documentation
+
+Interactivité:
+
+La navigation entre les deux page se fait en cliquant sur le titre «My Music», qui sert de lien.
+
+A réaliser :
+
+Général:
+
+Les champs de recherches afficheront les artistes recherchés et leurs vidéos et images associées.
+
+Sur mobile :
+
+Page d’accueil :
+Cliquer sur le menu burger fera apparaître un menu de navigation latéral.
+
+Cliquer sur le bouton «Ses prochains concerts» fera apparaître une liste déroulante des dates des prochains concerts.
+
+
